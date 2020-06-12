@@ -1,10 +1,17 @@
+using System;
+
 namespace Kata
 {
     public class Calculator
     {
         public int Add(string number = "")
         {
-            return 0;
+            if (string.IsNullOrEmpty(number))
+            {
+                return 0;                
+            }
+            
+            return Int32.Parse(number);
         }
     }
 }
